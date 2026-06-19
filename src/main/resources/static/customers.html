@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Customers — nbooking</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+<nav id="nav"></nav>
+<div id="error-box" class="error" style="display:none"></div>
+
+<h1>Customers</h1>
+<table id="customers-table">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>İsim</th>
+        <th>Soyisim</th>
+        <th>Telefon</th>
+        <th>Email</th>
+        <th>Oluşturulma</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<h2>Yeni Müşteri Oluştur</h2>
+<form id="create-customer-form" class="inline-form">
+    <label>İsim
+        <input type="text" name="firstName" required>
+    </label>
+    <label>Soyisim
+        <input type="text" name="lastName" required>
+    </label>
+    <label>Telefon
+        <input type="text" name="phone" required>
+    </label>
+    <label>Email (opsiyonel)
+        <input type="email" name="email">
+    </label>
+    <label>Şifre (opsiyonel — login olabilmek için)
+        <input type="password" name="password">
+    </label>
+    <button type="submit">Oluştur</button>
+</form>
+
+<script src="/js/app.js"></script>
+<script src="/js/customers.js"></script>
+</body>
+</html>
